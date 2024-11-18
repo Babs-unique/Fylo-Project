@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sono:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg-desktop.png);
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    background-position: 1px 320px;
+    font-family:  "Raleway", sans-serif;
+}
+.container{
+   /*  display: grid;
+    grid-template-columns: 250px 250px;
+    place-content: center;
+    background-color: hsl(228, 56%, 26%); */
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 300px; */
+    display: grid;
+    grid-template-columns: 290px 500px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 240px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background-color: hsl(229, 57%, 11%); */
+    
+}
+.icons>img{
+    display: flex;
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    width: 40px;
+    height: 36px;
+}
+
+.icons-container{
+    display: flex;
+    flex-flow: column nowrap;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: hsl(228, 56%, 26%);
+    height: 150px;
+    justify-content: center;
+    padding: 20px;
+    border-top-right-radius: 80px;
+}
+.logo{
+    width: 10px;
+}
+.Data-usage{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color:hsl(228, 56%, 26%);
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    padding:25px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin-top: 50px
+}
+.color-filler{
+    background-color: hsl(229, 57%, 11%);
+    width: 400px;
+    height: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+.color-filled{
+    background: linear-gradient( to right,  hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    width: 280px;
+    height: 14px;
+    position: absolute;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+.white-filler{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position:absolute;
+    margin-top: 2px;
+    margin-left: 270px;
+    border-radius: 50%;
+}
+.highest-gb{
+    margin-left: 350px;
+    margin-top: -13px;
+}
+.gb-left{
+    background-color:hsl(243, 100%, 93%);
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 130px;
+    margin-left: 290px;
+    width: 130px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    color: black;
+    border-radius: 10px;
+    border-bottom-right-radius: 2;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+.highest-gb,
+.lowest-gb{
+    font-size: 12px;
+    color: white;
+    font-style: oblique;
+    font-weight: 700;
+}
+
+div{
+    font-size: smaller;
+    font-weight: 100;
+    color: rgba(255,255,255,0.5);
+}  
+span{
+    font-size:medium;
+    opacity: none;
+    font-weight: 500;
+    font-style: italic ;
+    color: white;
+    opacity: none;
+}
+.left{
+    font-size: 12px;
+    color:rgba(0,0,0,0.5);
+    font-style: normal;
+}
+@media (min-width:320px) and (max-width:374px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        gap: 10px;
+    }
+    .icons-container{
+        width: 310px;
+    }
+    .Data-usage{
+        width: 310px;
+        height: 150px;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .color-filler{
+        width: 300px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .color-filled{
+        height: 20px;
+        margin-bottom: -0px;
+        width: 250px;
+    }
+    .white-filler{
+        width: 18px;
+        height: 18px;
+        margin-left: 230px;
+        margin-bottom: -0px;
+    }
+    .highest-gb{
+        margin-left:260px ;
+    }
+    .usage{
+        text-align: center;
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+    .gb-left{
+        margin-top: 300px;
+        margin-left: 50px;
+        width: 200px;
+    }
+    .left{
+        font-weight: 900;
+    }
+}
+@media (min-width:425px) and (max-width:767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .icons-container{
+        width: 370px;
+        margin-left: 20px;
+    }
+    .Data-usage{
+        width: 370px;
+        height: 150px;
+        padding: 15px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .color-filler{
+        width: 320px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .color-filled{
+        height: 20px;
+        margin-bottom: -10px;
+    }
+    .white-filler{
+        width: 18px;
+        height: 18px;
+        margin-left: 260px;
+        margin-bottom: -10px;
+    }
+    .highest-gb{
+        margin-left:260px ;
+    }
+    .usage{
+        text-align: center;
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+    .gb-left{
+        margin-top: 300px;
+        margin-left: 50px;
+        width: 200px;
+    }
+    .left{
+        font-weight: 900;
+    }
+}
+@media (min-width:375px) and (max-width:424px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .icons-container{
+        width: 370px;
+    }
+    .Data-usage{
+        width: 370px;
+        height: 150px;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .color-filler{
+        width: 320px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .color-filled{
+        height: 20px;
+        margin-bottom: -10px;
+    }
+    .white-filler{
+        width: 18px;
+        height: 18px;
+        margin-left: 260px;
+        margin-bottom: -10px;
+    }
+    .highest-gb{
+        margin-left:260px ;
+    }
+    .usage{
+        text-align: center;
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+    .gb-left{
+        margin-top: 300px;
+        margin-left: 50px;
+        width: 200px;
+    }
+    .left{
+        font-weight: 900;
+    }
+}
